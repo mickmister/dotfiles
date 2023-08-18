@@ -39,3 +39,37 @@ function assumed_file_unchanged() {
 function undo_assumed_unchanged_all() {
     git ls-files -v | grep '^h' | cut -d' ' -f2  | xargs git update-index --no-assume-unchanged
 }
+
+
+# fcoc - checkout git commit
+function fcoc() {
+  local commits commit
+  commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+  git checkout $(echo "$commit" | sed "s/ .*//")
+}
+
+# fbr - checkout git branch
+function fbr() {
+  local branches branch
+  branches=$(git --no-pager branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# fbrr - checkout git branch (including remote branches)
+function fbrr() {
+  local branches branch
+  branches=$(git branch --all | grep -v HEAD) &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
+
+function mp4() {
+    ffmpeg -i $1 -vcodec h264 -acodec mp2 $2
+}
+
+function gif() {
+    ffmpeg -i $1 -pix_fmt rgb24 $2
+}

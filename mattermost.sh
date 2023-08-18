@@ -1,10 +1,10 @@
 export MM_DEBUG=1
 export MM_SERVICESETTINGS_ENABLEDEVELOPER=1
 
-source <(mmctl completion zsh)
+# source <(mmctl completion zsh)
 
 source /usr/local/opt/nvm/nvm.sh > /dev/null 2>&1
-nvm use --delete-prefix v16.4.0 --silent
+nvm use v16.10.0 --silent
 
 alias ptof="tail -f ~/mattermost/mattermost-server/ptof.log"
 alias moveptof='cp ~/mattermost/ptof.go .'

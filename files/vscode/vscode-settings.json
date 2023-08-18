@@ -1,0 +1,56 @@
+{
+    "workbench.tree.indent": 16,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.hotExit": "onExitAndWindowClose",
+    "git.autofetch": true,
+    "typescript.preferences.quoteStyle": "single",
+    "workbench.editor.decorations.colors": false,
+    "editor.inlineSuggest.enabled": true,
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "search.exclude": {
+        "_debug": true,
+        "_ignore": true
+    },
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#00000000",
+        "editorWarning.foreground": "#00000000",
+        "editorInfo.foreground": "#00000000""progressBar.background": "#ff00"
+    },
+    "audioCues.volume": 0,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "git.showActionButton": {
+        "commit": false,
+        "publish": false,
+        "sync": false
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.openRecent"
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "redhat.telemetry.enabled": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.trimTrailingWhitespace": true,
+    "explorer.autoReveal": false,
+    "window.zoomLevel": 1,
+    "jestrunner.runOptions": [
+        "-u"
+    ],
+}

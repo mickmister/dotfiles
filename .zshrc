@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/koch/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="zhann"
@@ -26,6 +26,4 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export GOPATH=~/go
-export PATH=$PATH:~/scripts
-export PATH=$PATH:~/go/bin
+source ~/code/dotfiles/shell.sh
