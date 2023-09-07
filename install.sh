@@ -6,9 +6,8 @@ source $HOME/code/dotfiles/symlinks.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-# Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
+# Install fnm
+curl -fsSL https://fnm.vercel.app/install | bash
 
 # Run these to set up .zshrc this in ~/.bash_profile:
 echo 'export SHELL=$(which zsh)' >> ~/.bash_profile

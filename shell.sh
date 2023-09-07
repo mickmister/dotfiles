@@ -1,6 +1,4 @@
-export GOPATH=~/go
 export PATH=$PATH:~/scripts
-export PATH=$PATH:~/go/bin
 
 export GIT_EDITOR=nano
 export EDITOR=nano
